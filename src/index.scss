@@ -1,0 +1,9 @@
+// Force UTF-8 encoding to avoid any potential issue with character encoding.
+@charset "utf-8";
+
+// Polyfills
+@use "../node_modules/dialog-polyfill/dialog-polyfill.css"; // Dialog polyfill.
+
+@use "myspace.scss";
+
+  

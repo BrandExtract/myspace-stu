@@ -1,0 +1,220 @@
+dialog {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  margin: auto;
+  border: solid;
+  padding: 1em;
+  background: white;
+  color: black;
+  display: block;
+}
+
+dialog:not([open]) {
+  display: none;
+}
+
+dialog + .backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+._dialog_overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+dialog.fixed {
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+img {
+  display: inline-block;
+  float: left;
+  margin: 0 16px 8px 0;
+}
+
+p {
+  padding-top: 6px;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.blue {
+  color: #006892;
+}
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10px;
+  background: url("../img/background.svg");
+  margin: 0;
+}
+body a {
+  text-decoration: none;
+}
+
+header {
+  width: 700px;
+  background: #006892;
+  margin: 0 auto;
+  height: 111px;
+  color: white;
+}
+header a {
+  color: white;
+}
+header .metanav {
+  float: right;
+  padding: 10px 16px;
+}
+header .search {
+  display: inline-block;
+  margin: 4px auto;
+}
+header .logo img {
+  margin: 9px 32px 0 16px;
+}
+
+nav {
+  height: 23px;
+  width: 700px;
+  background: #ADA200;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4px 0;
+}
+nav a {
+  color: white;
+}
+
+main {
+  width: 669px;
+  margin: 0 auto;
+}
+main .left {
+  float: left;
+  width: 265px;
+}
+main .right {
+  float: right;
+  width: 380px;
+}
+main .cards > div {
+  background-color: #C3B600;
+  border: solid 2px #006892;
+  margin-top: 10px;
+  padding: 2px 8px;
+}
+main .cards > .url h4, main .cards > .url p {
+  margin: 0 -7px;
+}
+main .cards > .url a {
+  color: black;
+}
+main .contact {
+  width: 90px;
+  float: left;
+  padding: 0 8px 16px 24px;
+  background-image: url(https://via.placeholder.com/16x16.png?text=icon);
+  background-repeat: no-repeat;
+}
+main .contact a {
+  color: blue;
+}
+main .interests h3 {
+  margin: 0 0 4px 0;
+  padding: 0;
+}
+main .details h3 {
+  margin: 0 0 4px 0;
+  padding: 0;
+}
+main .schools h3 {
+  margin: 0 0 4px 0;
+  padding: 0;
+}
+main .blog a {
+  color: white;
+}
+main .whitetable table {
+  margin: 0 -8px;
+  border: solid 1px white;
+}
+main .whitetable table tr td {
+  vertical-align: top;
+  border: solid 1px white;
+  margin: 0;
+  padding: 0;
+  padding: 4px;
+}
+main .friends img {
+  margin: 0 4px;
+}
+main .friends a {
+  color: white;
+}
+main .friends a.blue {
+  color: #006892;
+}
+main .friends table {
+  width: 260px;
+}
+main .friends table tr td {
+  vertical-align: top;
+  text-align: center;
+  font-weight: 800;
+}
+main .comments a {
+  color: white;
+}
+main .comments a.blue {
+  color: #006892;
+}
+
+.clear {
+  clear: both;
+}
+
+dialog::backdrop, dialog + .backdrop {
+  /* polyfill */
+  background-color: #000;
+  opacity: 0.7;
+}
+
+dialog {
+  border: solid 2px #006892;
+  width: 700px;
+}
+dialog table tr td {
+  vertical-align: top;
+  text-align: center;
+}
+dialog table tr td img {
+  display: inline;
+  margin: 0 8px 0 8px;
+}
+dialog .close {
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=myspace.css.map */

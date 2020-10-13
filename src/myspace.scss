@@ -1,0 +1,223 @@
+$blue: #006892;
+$green-dark: #ADA200;
+$green-med: #C3B600;
+$header-width: 700px;
+$body-width: 669px;
+
+img {
+  display: inline-block;
+  float: left;
+  margin: 0 16px 8px 0;
+}
+
+p {
+  padding-top: 6px;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.blue {
+  color: $blue;
+}
+
+body {
+  font-family: Verdana,Geneva,sans-serif; 
+  font-size: 10px;
+  background: url("../img/background.svg");
+  margin: 0;
+  a {
+    text-decoration: none;
+  }
+}
+
+header {
+  width: $header-width;
+  background: $blue;
+  margin: 0 auto;
+  height: 111px;
+  color: white;
+
+  a {
+    color: white;
+  }
+
+  .metanav {
+    float: right;
+    padding: 10px 16px;
+  }
+
+  .search {
+    display: inline-block;
+    margin: 4px auto;
+  }
+
+  .logo {
+    img {
+      margin: 9px 32px 0 16px;
+    }
+  }
+}
+
+nav {
+  height: 23px;
+  width: $header-width;
+  background: $green-dark;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4px 0;
+  a {
+    color: white;
+  }
+}
+
+main {
+
+  width: $body-width;
+  margin: 0 auto;
+
+  .left {
+    float: left;
+    width: 265px;
+  }
+
+  .right {
+    float: right;
+    width: 380px;
+  }
+
+  .cards>div {
+    background-color: $green-med;
+    border: solid 2px $blue;
+    margin-top: 10px;
+    padding: 2px 8px;
+  }
+
+  .cards>.url {
+    h4, p {
+      margin: 0 -7px;
+    }
+    a {
+      color: black;
+    }
+  }
+
+  .contact {
+    width: 90px;
+    float: left;
+    padding: 0 8px 16px 24px;
+    background-image: url(https://via.placeholder.com/16x16.png?text=icon);
+    background-repeat: no-repeat;
+    a {
+      color: blue;
+    }
+  }
+
+  .interests {
+    h3 {
+      margin: 0 0 4px 0;
+      padding: 0;
+    }
+  }
+
+  .details {
+    h3 {
+      margin: 0 0 4px 0;
+      padding: 0;
+    }
+  }
+
+  .schools {
+    h3 {
+      margin: 0 0 4px 0;
+      padding: 0;
+    }
+  }
+
+  .blog {
+    a {
+      color: white;
+    }
+  }
+
+  .whitetable {
+    table {
+      margin: 0 -8px;
+      border: solid 1px white;
+      tr {
+        td {
+          vertical-align: top;
+          border: solid 1px white;
+          margin: 0;
+          padding: 0;
+          padding: 4px;
+        }
+      };
+    }
+  }
+
+  .friends {
+    img {
+      margin: 0 4px;
+    }
+    a {
+      color: white;
+    }
+    a.blue {
+      color: $blue;
+    }
+    table {
+      width: 260px;
+      tr {
+        td {
+          vertical-align: top;
+          text-align: center;
+          font-weight: 800;
+        }
+      };
+    }
+  }
+
+  .comments {
+    a {
+      color: white;
+    }
+    a.blue {
+      color: $blue;
+    }
+  }
+
+}
+
+.clear {
+  clear: both;
+}
+
+dialog::backdrop, dialog + .backdrop { /* polyfill */
+  background-color: #000;
+  opacity: 0.7;
+} 
+
+dialog {
+  border: solid 2px $blue;
+  width: 700px;
+  table {
+    tr {
+      td {
+        vertical-align: top;
+        text-align: center;
+        img {
+          display: inline;
+          margin: 0 8px 0 8px;
+        }
+      }
+    }
+  }
+  .close {
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+  }
+}
+
