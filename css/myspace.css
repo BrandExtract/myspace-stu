@@ -64,7 +64,7 @@ p {
 body {
   font-family: Verdana, Geneva, sans-serif;
   font-size: 10px;
-  background: url("../img/background.svg");
+  background: url("../img/MySpace_Background.svg");
   margin: 0;
 }
 body a {
@@ -90,6 +90,7 @@ header .search {
   margin: 4px auto;
 }
 header .logo img {
+  width: 111px;
   margin: 9px 32px 0 16px;
 }
 
@@ -129,11 +130,69 @@ main .cards > .url h4, main .cards > .url p {
 main .cards > .url a {
   color: black;
 }
+main #stuProfilePic {
+  width: 151px;
+}
 main .contact {
-  width: 90px;
+  width: 114px;
   float: left;
-  padding: 0 8px 16px 24px;
-  background-image: url(https://via.placeholder.com/16x16.png?text=icon);
+}
+main .contact .message {
+  float: left;
+  padding: 0 116px 20px 24px;
+  background-image: url("../img/contact_icons/sendMailIcon.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+main .contact .forward {
+  float: right;
+  padding: 0 100px 20px 15px;
+  background-image: url("../img/contact_icons/forwardMailIcon.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+main .contact .friend {
+  float: left;
+  padding: 0 116px 20px 24px;
+  background-image: url("../img/contact_icons/addFriendIcon.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+main .contact .favorite {
+  float: right;
+  padding: 0 100px 20px 15px;
+  background-image: url("../img/contact_icons/addFavoritesIcon.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+main .contact .instant {
+  float: left;
+  padding: 10px 87px 20px 24px;
+  background-image: url("../img/contact_icons/messageFriend.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+main .contact .block {
+  float: right;
+  padding: 10px 100px 20px 15px;
+  margin-right: 6px;
+  background-image: url("../img/contact_icons/blockuser.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+main .contact .group {
+  float: left;
+  padding: 5px 116px 20px 24px;
+  background-image: url("../img/contact_icons/icon_add_to_group.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+main .contact .rank {
+  float: right;
+  padding: 5px 100px 20px 15px;
+  margin-right: 6px;
+  background-image: url("../img/contact_icons/icon_rank_user4.png");
+  background-position: right;
   background-repeat: no-repeat;
 }
 main .contact a {
@@ -167,6 +226,7 @@ main .whitetable table tr td {
 }
 main .friends img {
   margin: 0 4px;
+  width: 79px;
 }
 main .friends a {
   color: white;
@@ -188,6 +248,9 @@ main .comments a {
 main .comments a.blue {
   color: #006892;
 }
+main .comments img {
+  width: 79px;
+}
 
 .clear {
   clear: both;
@@ -208,7 +271,8 @@ dialog table tr td {
   text-align: center;
 }
 dialog table tr td img {
-  display: inline;
+  display: inline-block;
+  width: 79px;
   margin: 0 8px 0 8px;
 }
 dialog .close {
