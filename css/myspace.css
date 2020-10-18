@@ -135,6 +135,7 @@ main #stuProfilePic {
 }
 main .contact {
   width: 114px;
+  height: 30px;
   float: left;
 }
 main .contact .message {
